@@ -1,11 +1,13 @@
 function Footer() {
   return (
-    <footer className="footer bg-base-200 p-10 text-base-content">
+    <footer className="footer bg-secondary p-10 text-[#e8e8e8] text-base-content">
       <form>
         <header className="footer-title">Newsletter</header>
         <fieldset className="form-control w-80">
           <label className="label">
-            <span className="label-text">Enter your email address</span>
+            <span className="label-text text-[#e8e8e8]">
+              Enter your email address
+            </span>
           </label>
           <div className="relative">
             <input
