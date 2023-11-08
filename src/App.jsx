@@ -5,34 +5,6 @@ function App() {
       <body>
         <Header />
         <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>;
       </body>
     </html>
   );
