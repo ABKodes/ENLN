@@ -3,7 +3,7 @@ import Logo from '../assets/logo.png'
 function Header() {
   return (
     <div className="sticky top-0 z-10 bg-[#EBE3D5]">
-      <div className="st navbar mx-auto w-10/12">
+      <div className="navbar mx-auto w-10/12">
         <div className="navbar-start">
           <img src={Logo} alt="logo" className="h-1/12 w-1/12" />
         </div>
