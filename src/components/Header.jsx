@@ -114,7 +114,7 @@ function Header() {
             </ul>
           </div>
           <div className="hidden lg:block">
-            <a className="btn btn-primary">Join Us</a>
+            <a className="btn btn-md btn-primary">Join Us</a>
           </div>
         </div>
       </div>
