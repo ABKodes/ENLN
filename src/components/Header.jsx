@@ -1,8 +1,8 @@
 import Logo from '../assets/logo.png'
-
+import { Link } from 'react-router-dom';
 function Header() {
   return (
-    <div className="sticky top-0 z-10 bg-[#EBE3D5]">
+    <div className="sticky top-0 z-10 bg-[#e8e8e8]">
       <div className="navbar mx-auto w-10/12">
         <div className="navbar-start">
           <img src={Logo} alt="logo" className="h-2/12 w-2/12" />
@@ -10,7 +10,7 @@ function Header() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>About</a>
+              <Link>About</Link>
             </li>
             <li>
               <a>Program</a>
@@ -114,7 +114,7 @@ function Header() {
             </ul>
           </div>
           <div className="hidden lg:block">
-            <a className="btn">Join Us</a>
+            <a className="btn btn-primary">Join Us</a>
           </div>
         </div>
       </div>
