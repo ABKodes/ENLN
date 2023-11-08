@@ -16,6 +16,7 @@ export default {
         },
       },
       "light",
+      "cupcake",
     ],
   },
   plugins: [require("daisyui")],
