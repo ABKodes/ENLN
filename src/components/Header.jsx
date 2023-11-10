@@ -5,7 +5,7 @@ function Header() {
     <div className="sticky top-0 z-10 bg-[#e8e8e8]">
       <div className="navbar mx-auto w-10/12">
         <div className="navbar-start">
-          <img src={Logo} alt="logo" className="h-2/12 w-2/12" />
+          <img src={Logo} alt="logo" className="w-[23%] h-[23%]" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

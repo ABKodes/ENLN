@@ -1,11 +1,15 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Home from "./pages/Home"
+import About from "./pages/About"
+
 function App() {
   return (
     <html>
       <body>
         <Header />
-        <h1 className="m-5 p-4 text-3xl underline">This is the start</h1>
+        <Home />
+        <About />
         <Footer/>
       </body>
     </html>
