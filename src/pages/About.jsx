@@ -1,4 +1,3 @@
-import react from 'react';
 //import teampic from '../assets/teampic';
 import meeting from '../assets/meeting.jpg'
 
@@ -32,6 +31,6 @@ function About () {
 </div>
 
     );
-  };
+  }
   
   export default About;
