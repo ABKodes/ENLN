@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Tech Conference 2023",
+    "paragraph": "Join us for the annual Tech Conference where industry leaders and experts will share insights on the latest technological advancements.",
+    "date": "15",
+    "month": "November",
+    "time": "9:00 AM - 5:00 PM",
+    "color": "#FF6969"
+  },
+  {
+    "id": 2,
+    "title": "Winter Festival",
+    "paragraph": "Celebrate the holiday season at our Winter Festival filled with festive activities for the whole family.",
+    "date": "25",
+    "month": "December",
+    "time": "4:00 PM - 10:00 PM",
+    "color": "#83A2FF"
+  },
+  {
+    "id": 3,
+    "title": "New Year's Eve Gala",
+    "paragraph": "Ring in the New Year with glamour and style at our exclusive New Year's Eve Gala.",
+    "date": "5",
+    "month": "January",
+    "time": "8:00 PM - 1:00 AM",
+    "color": "#A6CF98"
+  }
+]
