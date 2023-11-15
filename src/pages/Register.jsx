@@ -2,10 +2,7 @@ import React from "react";
 import teampic from "../assets/teampic.jpg";
 import teampic2 from "../assets/teampic2.jpg";
 
-
-
 function Register() {
-
   return (
     <div
       className="relative flex h-[100vh]  items-center justify-center bg-cover bg-center"
@@ -27,7 +24,6 @@ function Register() {
             Apply for membership
           </h2>
           <p className="mb-2 ml-10 p-2 font-serif text-sm">
-          <p className="mb-2 ml-10 p-2 font-serif text-sm">
             Join our community and create awarness
           </p>
           <form
@@ -35,22 +31,22 @@ function Register() {
             className=" y ml-10 grid grid-cols-2 gap-3"
             style={{ fontFamily: "Playfair Display" }}
           >
-            <div class="relative z-0">
+            <div className="relative z-0">
               <input
                 type="text"
                 id="first-name"
-                class="peer block w-full appearance-none border-0 border-b-2 border-secondary bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-gray-400 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-gray-500"
+                className="peer block w-full appearance-none border-0 border-b-2 border-secondary bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-gray-400 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-gray-500"
                 placeholder=" "
               />
               <label
                 for="first-name"
                 style={{ fontFamily: "Playfair Display" }}
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-700 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-700 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-500 peer-focus:dark:text-gray-700"
+                className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-700 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-700 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-500 peer-focus:dark:text-gray-700"
               >
                 First Name
               </label>
             </div>
-            <div class="relative z-0">
+            <div className="relative z-0">
               <input
                 type="text"
                 id="last-name"
@@ -59,30 +55,30 @@ function Register() {
               />
               <label
                 for="last-name"
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-600 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-gray-500"
+                className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-600 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-gray-500"
               >
                 Last Name
               </label>
             </div>
-            <div class="relative z-0">
+            <div className="relative z-0">
               <input
                 type="text"
                 id="email"
-                class="peer block w-full appearance-none border-0 border-b-2 border-secondary bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-gray-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-gray-500"
+                className="peer block w-full appearance-none border-0 border-b-2 border-secondary bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-gray-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-gray-500"
                 placeholder=" "
               />
               <label
                 for="email"
-                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-600 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-gray-500"
+                className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-600 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-gray-500"
               >
                 Email
               </label>
             </div>
-            <div class="relative z-0">
+            <div className="relative z-0">
               <input
                 type="text"
                 id="phone"
-                class="peer block w-full appearance-none border-0 border-b-2 border-secondary bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-gray-400 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-gray-500"
+                className="peer block w-full appearance-none border-0 border-b-2 border-secondary bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-gray-400 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-gray-500"
                 placeholder=" "
               />
               <label
