@@ -64,7 +64,7 @@ function News() {
           <div className="mx-auto w-10/12 border-b-2 border-gray-500"></div>
           {/* Content */}
           <div className="card card-side mx-auto w-9/12 bg-base-100">
-            <div className="h-6/12 flex w-screen flex-col items-center justify-center">
+            <div className="h-[300px] flex w-[2000px] flex-col items-center justify-center">
               <img
                 src={newsItem.image}
                 className="h-full w-fit rounded-2xl p-3"
