@@ -33,7 +33,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
       {/* Coming Soon */}
       <div className="mb-5 h-screen w-full bg-[#efefef]">
         <div className=" h-3/12 mx-auto mt-5 w-6/12 bg-white p-8">
@@ -48,10 +47,10 @@ const Hero = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div className="card  font-sans lg:card-side my-4 w-11/12 mx-auto">
+        <div className="card  mx-auto my-4 w-11/12 font-sans lg:card-side">
           <div className="card-body flex items-center justify-center p-6">
             <h2 className="card-title">New album is released!</h2>
-            <p className=''>
+            <p className="">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ligula
               ullamcorper malesuada proin libero. Vulputate ut pharetra sit amet
@@ -66,7 +65,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-        {/* What we stand for */}
+      {/* What we stand for */}
     </>
   );
 };
