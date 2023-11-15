@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import teampic from "../assets/image-3.jpg";
-import meeting from "../assets/image-1.jpg";
-import meeting2 from "../assets/image-2.jpg";
+import image3 from "../assets/image-3.jpg";
+import image1 from "../assets/image-1.jpg";
+import image2 from "../assets/image-2.jpg";
 import { GoDot } from "react-icons/go";
 
 
@@ -26,8 +26,8 @@ import { GoDot } from "react-icons/go";
 
         <div className="carousel w-full">
           <div id="item1" className="carousel-item relative w-full">
-            <img src={image-1} className="w-full" />
-            <div className="absolute bottom-0 right-3 flex transform justify-center gap-2 py-2">
+            <img src={image1} className="w-full" />
+            {/* <div className="absolute bottom-0 right-3 flex transform justify-center gap-2 py-2">
               <a
                 href="#item1"
                 className={`btn-xl btn btn-circle border-primary bg-transparent ${
@@ -55,10 +55,53 @@ import { GoDot } from "react-icons/go";
               >
                 <GoDot />
               </a>
+            </div> */}
+            <div className="absolute bottom-0 right-3 flex transform justify-center gap-2 py-2">
+              <input
+                type="radio"
+                id="item1"
+                name="carousel-radio"
+                checked={activeItem === "item1"}
+                onChange={() => handleItemClick("item1")}
+              />
+              <label
+                htmlFor="item1"
+                className={`btn-xl btn btn-circle border-primary bg-transparent ${
+                  activeItem === "item1" ? "bg-primary" : ""
+                }`}
+              ></label>
+
+              <input
+                type="radio"
+                id="item2"
+                name="carousel-radio"
+                checked={activeItem === "item2"}
+                onChange={() => handleItemClick("item2")}
+              />
+              <label
+                htmlFor="item2"
+                className={`btn-xl btn btn-circle border-primary bg-transparent ${
+                  activeItem === "item2" ? "bg-primary" : ""
+                }`}
+              ></label>
+
+              <input
+                type="radio"
+                id="item3"
+                name="carousel-radio"
+                checked={activeItem === "item3"}
+                onChange={() => handleItemClick("item3")}
+              />
+              <label
+                htmlFor="item3"
+                className={`btn-xl btn btn-circle border-primary bg-transparent ${
+                  activeItem === "item3" ? "bg-primary" : ""
+                }`}
+              ></label>
             </div>
           </div>
           <div id="item2" className="carousel-item relative w-full">
-            <img src={image-2} className="w-full" />
+            <img src={image2} className="w-full" />
             <div className="absolute bottom-0 right-3 flex  transform justify-center gap-2 py-2">
               <a
                 href="#item1"
@@ -90,7 +133,7 @@ import { GoDot } from "react-icons/go";
             </div>
           </div>
           <div id="item3" className="carousel-item relative w-full">
-            <img src={image-3} className="w-full" />
+            <img src={image3} className="w-full" />
             <div className="absolute bottom-0 right-3 flex  transform justify-center gap-2 py-2">
               <a
                 href="#item1"
