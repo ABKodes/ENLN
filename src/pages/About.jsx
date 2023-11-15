@@ -188,80 +188,11 @@ function About () {
   </div>
 </div>
 </div>
-
-
 </div>
-
 </div>
-
-<div className='bg-gray-200'>
-  <p style={{ fontFamily: "Playfair Display" }} className='text-accent flex text-center font-bold text-2xl px-60 py-6'> Organizational Structure </p>
-
- <div className='flex flex-col items-center '>
-<div className="flex flex-col items-center ">
-      <div className="w-28 h-28 rounded-full overflow-hidden">
-        <img className="object-cover w-full h-full" src={port3} alt="Profile" />
-      </div>
-      <p className="text-center mt-4"> voluptate repreh enderit</p>
-    </div>
-    <div className='bg-primary h-24 w-[2px] mt-8 '>
-
-    </div>
-
-<div className='flex flex-col-2 justify-center items-center w-7/12 mx-auto '>
-    <div className="flex flex-col items-center pl-28">
-      <div className="w-28 h-28 rounded-full overflow-hidden">
-        <img className="object-cover w-full h-full" src={port2} alt="Profile" />
-      </div>
-      <p className="text-center mt-4"> voluptate repreh enderit</p>
-    </div>
-    <div className="bg-primary flex-grow h-[2px] mb-8 "></div>
-      
-    <div className="flex flex-col items-center pr-28">
-      <div className="w-28 h-28 rounded-full overflow-hidden">
-        <img className="object-cover w-full h-full" src={port} alt="Profile" />
-      </div>
-      <p className="text-center mt-4"> voluptate repreh enderit</p>
-    </div>
-    </div>
-
-    <div className='flex justify-between w-[33%]'>
-    <div className='bg-primary h-24 w-[2px] mt-8 '> </div>
-    <div className='bg-primary h-24 w-[2px] mt-8 '> </div>
-    </div>
-    
-
-
-    <div className='flex flex-col-3 justify-center items-center w-10/12 mx-auto pb-8'>
-    <div className="flex flex-col items-center pl-28">
-      <div className="w-28 h-28 rounded-full overflow-hidden">
-        <img className="object-cover w-full h-full" src={port2} alt="Profile" />
-      </div>
-      <p className="text-center mt-4"> voluptate repreh enderit</p>
-    </div>
-    <div className="bg-primary flex-grow h-[2px] mb-8 px-4"></div>
-
-    <div className="flex flex-col items-center">
-      <div className="w-28 h-28 rounded-full overflow-hidden">
-        <img className="object-cover w-full h-full" src={port} alt="Profile" />
-      </div>
-      <p className="text-center mt-4"> voluptate repreh enderit</p>
-    </div>
-    <div className="bg-primary flex-grow h-[2px] mb-8 -px-10"></div>
-    <div className="flex flex-col items-center mr-28">
-      <div className="w-28 h-28 rounded-full overflow-hidden">
-        <img className="object-cover w-full h-full" src={port2} alt="Profile" />
-      </div>
-      <p className="text-center mt-4"> voluptate repreh enderit</p>
-    </div>
-    </div>
-
-
-    </div>
-    </div> 
 </div>
 
     );
-  };
+  }
   
   export default About;

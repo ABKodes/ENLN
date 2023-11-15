@@ -2,11 +2,11 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home"
 import About from "./pages/About"
-import Blog from "./pages/Blog"
-import Programs from "./pages/Programs";
-import Contacts from "./pages/Contacts";
-import Resources from "./pages/Resources";
 
+import Register from "./pages/Register";
+import Blog from "./pages/Blog"
+
+import News from "./pages/News";
 function App() {
   return (
     <html>
@@ -14,10 +14,12 @@ function App() {
         <Header />
         <Home />
         <About />
+        <News/>
         <Blog />
         <Programs/>
         <Resources/>
         <Contacts/>
+        <Register />
         <Footer/>
       </body>
     </html>
