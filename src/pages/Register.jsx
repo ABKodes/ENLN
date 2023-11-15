@@ -2,7 +2,6 @@ import React from "react";
 import teampic from "../assets/teampic.jpg";
 import teampic2 from "../assets/teampic2.jpg";
 
-
 function Register() {
   return (
     <div
@@ -27,82 +26,108 @@ function Register() {
           <p className="mb-2 ml-10 p-2 font-serif text-sm">
             Join our community and create awarness
           </p>
-          <form className="card-body ml-10 grid grid-cols-2 gap-7 p-1 font-serif text-sm">
-            <div className="">
-              <label className="label">
-                <span className="label-text">First Name</span>
-              </label>
+          <form
+            action=""
+            className=" y ml-10 grid grid-cols-2 gap-3"
+            style={{ fontFamily: "Playfair Display" }}
+          >
+            <div className="relative z-0">
               <input
                 type="text"
-                placeholder=""
-                className="border-b border-black outline-none"
-                required
+                id="first-name"
+                className="peer block w-full appearance-none border-0 border-b-2 border-secondary bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-gray-400 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-gray-500"
+                placeholder=" "
               />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Last Name</span>
+              <label
+                for="first-name"
+                style={{ fontFamily: "Playfair Display" }}
+                className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-700 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-700 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-500 peer-focus:dark:text-gray-700"
+              >
+                First Name
               </label>
+            </div>
+            <div className="relative z-0">
               <input
                 type="text"
-                placeholder=""
-                className="border-b border-black outline-none"
-                required
+                id="last-name"
+                class="border-secodary peer block w-full appearance-none border-0 border-b-2 bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-gray-400 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-gray-500"
+                placeholder=" "
               />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Email</span>
+              <label
+                for="last-name"
+                className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-600 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-gray-500"
+              >
+                Last Name
               </label>
-              <input
-                type="email"
-                placeholder=""
-                className="border-b border-black outline-none"
-                required
-              />
             </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Phone</span>
-              </label>
+            <div className="relative z-0">
               <input
                 type="text"
-                placeholder=""
-                className="border-b border-black outline-none"
-                required
+                id="email"
+                className="peer block w-full appearance-none border-0 border-b-2 border-secondary bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-gray-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-gray-500"
+                placeholder=" "
               />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Location</span>
+              <label
+                for="email"
+                className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-600 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-gray-500"
+              >
+                Email
               </label>
+            </div>
+            <div className="relative z-0">
               <input
                 type="text"
-                placeholder=""
-                className="border-b border-black outline-none"
-                required
+                id="phone"
+                className="peer block w-full appearance-none border-0 border-b-2 border-secondary bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-gray-400 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-gray-500"
+                placeholder=" "
               />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Address</span>
+              <label
+                for="phone"
+                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-600 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-gray-500"
+              >
+                Phone
               </label>
+            </div>
+            <div class="relative z-0">
               <input
                 type="text"
-                placeholder=""
-                className="border-b border-black outline-none"
-                required
+                id="location"
+                class="peer block w-full appearance-none border-0 border-b-2 border-secondary bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-blue-500"
+                placeholder=" "
               />
+              <label
+                for="location"
+                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-600 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-gray-500"
+              >
+                Location
+              </label>
+            </div>
+            <div class="relative z-0">
+              <input
+                type="text"
+                id="address"
+                class="peer block w-full appearance-none border-0 border-b-2 border-secondary bg-transparent px-0 py-2.5 text-sm text-gray-900 focus:border-gray-600 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-white dark:focus:border-gray-500"
+                placeholder=" "
+              />
+              <label
+                for="address"
+                class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-600 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-gray-500"
+              >
+                Address
+              </label>
             </div>
           </form>
 
           <div>
-            <button className="w-45 btn btn-primary ml-20 mt-4 rounded-md font-serif tracking-widest md:rounded-lg lg:rounded-xl xl:rounded-2xl">
+            <button
+              className="w-45 btn btn-primary ml-20 mt-10 rounded-md font-serif tracking-widest md:rounded-lg lg:rounded-xl xl:rounded-2xl"
+              style={{ fontFamily: "Playfair Display" }}
+            >
               BECOME MEMBER
             </button>
           </div>
         </div>
-      </div>
+      </div>{" "}
     </div>
   );
 }

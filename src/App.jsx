@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 import Blog from "./pages/Blog"
 
 import News from "./pages/News";
+import AnnalForum from "./pages/AnnualForum"
 function App() {
   return (
     <html>
@@ -20,7 +21,8 @@ function App() {
         <Resources/>
         <Contacts/>
         <Register />
-        <Footer/>
+        <AnnalForum />
+        <Footer />
       </body>
     </html>
   );

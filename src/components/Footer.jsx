@@ -6,6 +6,8 @@ import {FaTwitter} from "react-icons/fa"
 function Footer() {
   return (
     <footer className="footer bg-secondary p-10 text-[#e8e8e8]">
+          
+
       <form>
         <header className="footer-title">Newsletter</header>
         <fieldset className="form-control w-80">
