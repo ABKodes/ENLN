@@ -4,6 +4,8 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Register from "./pages/Register";
 import News from "./pages/News";
+import Events from "./pages/Events";
+import Membership from "./pages/Membership";
 function App() {
   return (
     <html>
@@ -13,6 +15,8 @@ function App() {
         <About />
         <News/>
         <Register />
+        <Events/>
+        <Membership />
         <Footer />
       </body>
     </html>
