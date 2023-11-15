@@ -27,6 +27,7 @@ function Register() {
             Apply for membership
           </h2>
           <p className="mb-2 ml-10 p-2 font-serif text-sm">
+          <p className="mb-2 ml-10 p-2 font-serif text-sm">
             Join our community and create awarness
           </p>
           <form

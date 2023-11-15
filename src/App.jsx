@@ -1,9 +1,9 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import Home from "./pages/Home"
+import About from "./pages/About"
 import Register from "./pages/Register";
-import AnnalForum from "./pages/AnnualForum";
+import News from "./pages/News";
 function App() {
   return (
     <html>
@@ -11,6 +11,7 @@ function App() {
         <Header />
         <Home />
         <About />
+        <News/>
         <Register />
         <AnnalForum />
         <Footer />

@@ -1,6 +1,4 @@
-import React from "react";
 import background from '../assets/background.jpg';
-import PlayfairDisplayRegular from "../fonts/PlayfairDisplay-Regular.ttf";
 import '../Fonts/fonts.css';
 
 const Hero = () => {
@@ -26,11 +24,7 @@ const Hero = () => {
               Ethiopia Nutrition Leaders Network
             </p>
             <p className="mb-5 font-sans text-white ">
-              At ENLN, we are committed to fostering nutrition leadership that
-              transforms communities and builds a healthier nation. Our 
-              collaborative network brings together experts, advocates, and
-              change makers dedicated to addressing nutrition challenges in
-              Ethiopia.
+              Create Visionary Leaders for the Journey to End Malnutrition in Ethiopia.
             </p>
             <button className="mx-auto my-6 w-[200px] rounded-md bg-primary py-3 font-sans font-medium text-white">
               Join Us
