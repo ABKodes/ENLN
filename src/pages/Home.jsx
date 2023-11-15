@@ -13,8 +13,8 @@ const Hero = () => {
         </div>
       </div>
       <div style={{ fontFamily: "Playfair Display" }} className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
-        <p className='text-primary font-bold p-2 text-9xl'>
-          E N L N
+        <p className='text-primary font-bold p-2 text-9xl tracking-widest'>
+          ENLN
         </p>
         <h1 className=' md:text-6xl sm:text-6xl text-4xl font-bold md:py-6 text-white '>
           Ethiopia Nutrition Leaders Network
