@@ -1,13 +1,14 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./pages/Home"
-import About from "./pages/About"
-
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Programs from "./pages/Programs";
 import Register from "./pages/Register";
-import Blog from "./pages/Blog"
-
+import Blog from "./pages/Blog";
+import Resources from"./pages/Resources";
+import Contacts from "./pages/Contacts"
 import News from "./pages/News";
-import AnnalForum from "./pages/AnnualForum"
+import AnnalForum from "./pages/AnnualForum";
 function App() {
   return (
     <html>
@@ -15,11 +16,11 @@ function App() {
         <Header />
         <Home />
         <About />
-        <News/>
+        <News />
         <Blog />
-        <Programs/>
-        <Resources/>
-        <Contacts/>
+        <Programs />
+        <Resources />
+        <Contacts />
         <Register />
         <AnnalForum />
         <Footer />

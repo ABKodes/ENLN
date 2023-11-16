@@ -5,7 +5,7 @@ import teampic from "../assets/teampic.jpg";
 function Register() {
   return (
     <div
-      className="relative flex h-[100vh]  items-center justify-center bg-cover bg-center"
+      className="relative flex h-[100vh] w-screen items-center justify-center bg-cover bg-center"
       style={{
         backgroundImage: `url(${teampic})`,
         fontFamily: "Playfair Display",
@@ -125,7 +125,7 @@ function Register() {
             </button>
           </div>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 }
