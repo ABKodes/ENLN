@@ -2,7 +2,7 @@ import Logo from '../assets/logo.png'
 import { Link } from 'react-router-dom';
 function Header() {
   return (
-    <div className="sticky top-0 z-10 bg-[#e8e8e8]">
+    <div className="sticky top-0 z-10 bg-[#e8e8e8] z-20">
       <div className="navbar mx-auto w-10/12">
         <div className="navbar-start">
           <img src={Logo} alt="logo" className="w-[23%] h-[23%]" />

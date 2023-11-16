@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "/src/assets/image-2.jpg",
+    "title": "Effective Communication Skills Workshop",
+    "description": "Improve your communication skills and enhance your professional and personal relationships."
+  },
+  {
+    "id": 2,
+    "image": "/src/assets/image-2.jpg",
+    "title": "Web Development Bootcamp",
+    "description": "Learn the fundamentals of web development and build your first website in this intensive bootcamp."
+  },
+  {
+    "id": 3,
+    "image": "/src/assets/image-2.jpg",
+    "title": "Digital Marketing Masterclass",
+    "description": "Explore the latest trends in digital marketing and develop strategies for successful online campaigns."
+  },
+  {
+    "id": 4,
+    "image": "/src/assets/image-2.jpg",
+    "title": "Data Science and Machine Learning Workshop",
+    "description": "Get hands-on experience with data science tools and machine learning algorithms in this workshop."
+  },
+  {
+    "id": 5,
+    "image": "/src/assets/image-2.jpg",
+    "title": "Artificial Intelligence Seminar",
+    "description": "Discover the fascinating world of artificial intelligence and its applications in various industries."
+  },
+  {
+    "id": 6,
+    "image": "/src/assets/image-2.jpg",
+    "title": "Entrepreneurship Bootcamp",
+    "description": "Learn the essentials of entrepreneurship and turn your business ideas into reality."
+  },
+  {
+    "id": 7,
+    "image": "/src/assets/image-2.jpg",
+    "title": "Graphic Design Workshop",
+    "description": "Unlock your creativity and design skills in this hands-on graphic design workshop."
+  },
+  {
+    "id": 8,
+    "image": "/src/assets/image-2.jpg",
+    "title": "Photography Masterclass",
+    "description": "Master the art of photography, from composition to editing, in this comprehensive masterclass."
+  },
+  {
+    "id": 9,
+    "image": "/src/assets/image-2.jpg",
+    "title": "Personal Finance Seminar",
+    "description": "Learn essential financial management skills and plan for a secure financial future."
+  },
+  {
+    "id": 10,
+    "image": "/src/assets/image-2.jpg",
+    "title": "Health and Wellness Retreat",
+    "description": "Take a holistic approach to health and wellness in this rejuvenating retreat."
+  }
+]

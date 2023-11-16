@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Meeting Rescheduled",
+    "description": "The weekly team meeting has been rescheduled to Friday at 2:00 PM."
+  },
+  {
+    "id": 2,
+    "title": "Office Closure",
+    "description": "The office will be closed on Monday for a public holiday. Enjoy your long weekend!"
+  },
+  {
+    "id": 3,
+    "title": "Server Maintenance",
+    "description": "There will be scheduled server maintenance on Saturday from 10:00 PM to 2:00 AM. Expect brief interruptions."
+  },
+  {
+    "id": 4,
+    "title": "Upcoming Training Session",
+    "description": "Don't forget about the upcoming training session on Wednesday. Be prepared for an interactive and informative session."
+  },
+  {
+    "id": 5,
+    "title": "Network Outage",
+    "description": "Due to unexpected issues, there will be a brief network outage tomorrow morning from 8:00 AM to 9:00 AM."
+  },
+  {
+    "id": 6,
+    "title": "New Employee Introduction",
+    "description": "Please welcome our new team member, John Doe, who will be joining the marketing department starting next week."
+  },
+  {
+    "id": 7,
+    "title": "Project Deadline Reminder",
+    "description": "A friendly reminder that the project deadline is approaching. Make sure to complete your tasks on time."
+  },
+  {
+    "id": 8,
+    "title": "System Upgrade",
+    "description": "We will be performing a system upgrade over the weekend. Access to certain services may be temporarily unavailable."
+  },
+  {
+    "id": 9,
+    "title": "Emergency Drill",
+    "description": "An emergency drill is scheduled for Thursday at 1:00 PM. Please follow the evacuation procedures accordingly."
+  },
+  {
+    "id": 10,
+    "title": "Congratulations!",
+    "description": "Congratulations to the sales team for achieving record-breaking sales numbers last month. Keep up the excellent work!"
+  }
+]

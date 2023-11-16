@@ -22,6 +22,9 @@ function App() {
         <Resources />
         <Contacts />
         <Register />
+        <Events/>
+        <Membership />
+        <NewsDetail/>
         <AnnalForum />
         <Footer />
       </body>

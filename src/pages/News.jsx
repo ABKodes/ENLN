@@ -4,6 +4,7 @@ import { CiClock2 } from "react-icons/ci";
 import NewsData from "../data/news.json";
 import background from "../assets/meeting.jpg";
 import EventData from "../data/eventData.json";
+import {TbPlayerTrackNext} from 'react-icons/tb'
 function News() {
   return (
     <>
@@ -32,12 +33,13 @@ function News() {
             <div key={event.id} className="my-2">
               <div className=" flex-cols-1 card card-side flex rounded-3xl bg-base-100 shadow-xl">
                 <div
-                  className={` bg-${event.color} w-3/12 rounded-bl-xl rounded-tl-xl`}
+                  className={`max-w-3/12 inline-block rounded-bl-xl rounded-tl-xl text-center`}
+                  style={{ backgroundColor: event.color }}
                 >
-                  <span className="flex items-center justify-center p-5 text-7xl font-bold">
+                  <span className="max-w-3/12 flex items-center justify-center p-5 text-7xl font-bold ">
                     {event.date}
                   </span>
-                  <span className="flex items-center justify-center space-x-2 font-semibold">
+                  <span className="max-w-3/12 flex items-center justify-center space-x-2 font-semibold ">
                     <IoCalendarOutline />
                     <span>{event.month}</span>
                   </span>
@@ -64,7 +66,7 @@ function News() {
           <div className="mx-auto w-10/12 border-b-2 border-gray-500"></div>
           {/* Content */}
           <div className="card card-side mx-auto w-9/12 bg-base-100">
-            <div className="h-6/12 flex w-screen flex-col items-center justify-center">
+            <div className="flex h-[300px] w-[2000px] flex-col items-center justify-center">
               <img
                 src={newsItem.image}
                 className="h-full w-fit rounded-2xl p-3"
@@ -93,6 +95,23 @@ function News() {
           </div>
         </div>
       ))}
+
+      <div className="flex justify-between bg-gray-100 px-36">
+        <div className="flex items-center">
+          <TbPlayerTrackNext
+            className="scale-x-[-1] text-primary"
+            style={{ width: "20px", height: "20px" }}
+          />
+          <button className="px-2">Previous </button>
+        </div>
+        <div className="flex items-center">
+          <button className="px-2">Next </button>
+          <TbPlayerTrackNext
+            className="text-primary"
+            style={{ width: "20px", height: "20px" }}
+          />
+        </div>
+      </div>
     </>
   );
 }
