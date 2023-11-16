@@ -8,7 +8,7 @@ function Membership() {
   return (
     <>
       <div className="h-[110vh] w-full bg-secondary">
-        <div className="grid grid-cols-2">
+        <div className="m-5 grid grid-cols-2">
           <div className="">
             <h1 className="p-6 text-5xl text-accent">Membership</h1>
             <p className="p-10 text-justify text-sm text-white">
@@ -22,7 +22,7 @@ function Membership() {
             </p>
             <div className="relative">
               <img src={Member} className="z-20 mx-auto" alt="Membership" />
-              <div className="absolute left-[480px] top-80 z-10 h-16 w-16 bg-red-500"></div>
+              <div className="absolute right-52 top-80 h-16 w-16 bg-red-500 z-30"></div>
             </div>
           </div>
           {/* second column */}
