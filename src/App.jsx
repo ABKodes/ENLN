@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home"
 import About from "./pages/About"
-
+import NewsDetail from "./pages/NewsDetail";
 import Register from "./pages/Register";
 import Blog from "./pages/Blog"
 import News from "./pages/News";
@@ -27,6 +27,7 @@ function App() {
         <Register />
         <Events/>
         <Membership />
+        <NewsDetail/>
         <AnnalForum />
         <Footer />
       </body>
