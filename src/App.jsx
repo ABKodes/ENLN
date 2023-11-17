@@ -8,6 +8,9 @@ import Blog from "./pages/Blog";
 import Resources from"./pages/Resources";
 import Contacts from "./pages/Contacts"
 import News from "./pages/News";
+import Events from "./pages/Events";
+import Membership from "./pages/Membership";
+import NewsDetail from "./pages/NewsDetail";
 import AnnalForum from "./pages/AnnualForum";
 function App() {
   return (

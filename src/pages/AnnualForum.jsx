@@ -6,9 +6,6 @@ import AnnualForum1 from "../assets/AnnualForum1.jpg";
 import AnnualForum2 from "../assets/AnnualForum2.jpg";
 import { GoDot } from "react-icons/go";
 
-
-
-
   const AnnualForum = () => {
   const [activeItem, setActiveItem] = useState('item1');
   // const [item1, setItem1]=useState(false);
@@ -210,9 +207,20 @@ import { GoDot } from "react-icons/go";
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
+            {/* <lottie-player
+              src="https://lottie.host/9b514b33-5bf0-425a-bbc6-05b607194ff1/Z0s2L6r6Pw.json"
+              background="#FFFFFF"
+              speed="1"
+              style="width: 300px; height: 300px"
+              loop
+              controls
+              autoplay
+              direction="1"
+              mode="normal"
+            ></lottie-player> */}
           </div>
           <div className="carousel carousel-vertical ">
-            <div className="carousel-item h-full">
+            <div className="carousel-item relative h-full">
               <iframe
                 title="ENLN Video"
                 className="h-full w-full"
