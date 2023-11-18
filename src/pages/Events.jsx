@@ -3,13 +3,16 @@ import { BsBell } from "react-icons/bs";
 import workshops from "../data/workShop.json"
 import shortNotices from "../data/shortNotice.json"
 function Events() {
+  
   return (
     <div>
       <div
-        className="bg-[#efefef] p-5"
+        className="bg-10/12 bg-[#efefef]"
         style={{ fontFamily: "Playfair Display" }}
       >
-        <h1 className="font-serif text-3xl text-accent">Events</h1>
+        <h1 className="p-5 font-serif text-3xl font-bold text-accent">
+          Events
+        </h1>
         {/* ENLN training */}
         <div className="card w-8/12 bg-base-100 font-sans shadow-xl lg:card-side ">
           <div className="max-w-[600px]">
@@ -32,7 +35,9 @@ function Events() {
       {/* This is the horizontal scroll bar */}
       <div className="relative flex h-screen items-center justify-center bg-primary">
         <div className="relative z-0 mx-auto h-[600px] w-[90vw] justify-center rounded-lg bg-[#efefef]">
-          <h1>Workshop and Training</h1>
+          <h1 className="ml-5 p-5 font-serif text-3xl font-bold text-accent">
+            Workshop and Training
+          </h1>
         </div>
         <div className="carousel carousel-center rounded-box absolute left-0 right-0 z-10 max-w-full space-x-4 p-4 font-sans">
           {workshops.map((workshop) => (
@@ -52,7 +57,7 @@ function Events() {
       </div>
 
       {/* Mentorship */}
-      <div className="flex justify-end bg-[#efefef] p-5 ">
+      <div className="flex justify-end bg-[#efefef] ">
         {/* ENLN training */}
         <div className="card my-3 w-8/12 bg-base-100 shadow-xl lg:card-side">
           <div className="card-body ">
@@ -74,7 +79,9 @@ function Events() {
       </div>
       {/* Short Notices */}
       <div className="bg-[#efefef]">
-        <h1>Short Notices</h1>
+        <h1 className="p-5 font-serif text-3xl font-bold text-accent">
+          Short Notices
+        </h1>
         <div className="carousel carousel-center rounded-box w-full space-x-4 p-4">
           {shortNotices.map((notice) => (
             <div key={notice.id} className="carousel-item">
@@ -96,9 +103,9 @@ function Events() {
 
       {/* Stats */}
       <div className="mx-auto flex w-10/12 items-center">
-        <div className="stats mx-auto shadow">
+        <div className="stats shadow mx-auto">
           <div className="stat">
-            <div className="stat-figure text-secondary">
+            <div className="stat-figure text-primary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -109,13 +116,13 @@ function Events() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                 ></path>
               </svg>
             </div>
-            <div className="stat-title">Downloads</div>
-            <div className="stat-value">31K</div>
-            <div className="stat-desc">Jan 1st - Feb 1st</div>
+            <div className="stat-title">Total Likes</div>
+            <div className="stat-value text-primary">25.6K</div>
+            <div className="stat-desc">21% more than last month</div>
           </div>
 
           <div className="stat">
@@ -130,34 +137,21 @@ function Events() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
                 ></path>
               </svg>
             </div>
-            <div className="stat-title">New Users</div>
-            <div className="stat-value">4,200</div>
-            <div className="stat-desc">↗︎ 400 (22%)</div>
+            <div className="stat-title">Page Views</div>
+            <div className="stat-value text-secondary">2.6M</div>
+            <div className="stat-desc">21% more than last month</div>
           </div>
 
           <div className="stat">
             <div className="stat-figure text-secondary">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="inline-block h-8 w-8 stroke-current"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
-                ></path>
-              </svg>
             </div>
-            <div className="stat-title">New Registers</div>
-            <div className="stat-value">1,200</div>
-            <div className="stat-desc">↘︎ 90 (14%)</div>
+            <div className="stat-value">86%</div>
+            <div className="stat-title">Tasks done</div>
+            <div className="stat-desc text-secondary">31 tasks remaining</div>
           </div>
         </div>
       </div>
