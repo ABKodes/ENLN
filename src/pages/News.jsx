@@ -9,8 +9,10 @@ import { Link } from "react-router-dom";
 function News() {
   return (
     <>
-      <h1 className="mx-5 text-3xl font-bold text-accent">News</h1>
-      <h1 className="mb-4 text-4xl font-bold">Featured News</h1>
+      <h1 className="p-5 text-left font-serif text-3xl font-bold text-accent">
+        News
+      </h1>
+      <h1 className="mb-4 text-xl pl-5 font-bold">Featured News</h1>
       <div className="mx-auto grid w-9/12 grid-cols-1 gap-4 md:grid-cols-2">
         {/* Background column */}
         <div
@@ -80,13 +82,13 @@ function News() {
               </p>
               <div className="mx-auto my-6 w-10/12 border-b-2 border-stone-200"></div>
               <div className="card-actions justify-between">
-                <Link to = "/news-detail">
-                <button className="link-primary link flex items-center space-x-1 text-justify">
-                  <span>Read News</span>
-                  <span className="mt-1 flex-shrink-0 text-justify">
-                    <BiNews />
-                  </span>
-                </button>
+                <Link to="/news-detail">
+                  <button className="link-primary link flex items-center space-x-1 text-justify">
+                    <span>Read News</span>
+                    <span className="mt-1 flex-shrink-0 text-justify">
+                      <BiNews />
+                    </span>
+                  </button>
                 </Link>
                 <span className="flex items-center space-x-2 font-light">
                   <IoCalendarOutline />
