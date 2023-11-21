@@ -1,8 +1,6 @@
 import Lottie from "lottie-react";
 import Scroll from "../lottiescroll.json";
 import { Link } from "react-router-dom";
-import react from "react";
-import meeting from "../assets/meeting.jpg";
 import bigmeet from "../assets/bigmeet.jpg";
 import { PiEggCrackLight } from "react-icons/pi";
 import road2 from "../assets/road2.jpg";
@@ -12,15 +10,10 @@ import card1 from "../assets/card1.jpg";
 import card2 from "../assets/card2.jpg";
 import card3 from "../assets/card3.jpg";
 import card4 from "../assets/card4.jpg";
-import PlayfairDisplayRegular from "../fonts/PlayfairDisplay-Regular.ttf";
 import "../Fonts/fonts.css";
-import port from "../assets/port.jpg";
-import port2 from "../assets/port2.jpg";
-import port3 from "../assets/port3.jpg";
-
 function About() {
   return (
-    <div className="w-full bg-gray-100 py-16">
+    <div className="w-full bg-gray-100 pb-16">
       <div className="">
         <div
           style={{ backgroundImage: `url(${enlnpic})` }}
