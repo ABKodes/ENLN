@@ -61,7 +61,9 @@ function Header() {
     <div className="sticky top-0 z-10 z-20 bg-[#e8e8e8]">
       <div className="navbar mx-auto w-10/12">
         <div className="navbar-start">
-          <img src={Logo} alt="logo" className="h-[23%] w-[23%]" />
+          <Link to="/">
+            <img src={Logo} alt="logo" className="h-[23%] w-[23%]" />
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -69,13 +71,13 @@ function Header() {
               <li key={index}>
                 {item.subRoutes ? (
                   <details>
-                    <summary>
-                      <Link to={item.path}>{item.label}</Link>
-                    </summary>
+                    <summary>{item.label}</summary>
                     <ul className="p-2">
                       {item.subRoutes.map((subItem, subIndex) => (
                         <li key={subIndex}>
-                          <Link to={subItem.path}>{subItem.label}</Link>
+                          <Link to={item.path + subItem.path}>
+                            {subItem.label}
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -88,7 +90,7 @@ function Header() {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="#" className="btn btn-primary btn-md text-center">
+          <Link to="/membership" className="btn btn-primary btn-md text-center">
             Join Us
           </Link>
           <div className="dropdown dropdown-end lg:hidden">
@@ -116,13 +118,13 @@ function Header() {
                 <li key={index}>
                   {item.subRoutes ? (
                     <details>
-                      <summary>
-                        <Link to={item.path}>{item.label}</Link>
-                      </summary>
+                      <summary>{item.label}</summary>
                       <ul className="p-2">
                         {item.subRoutes.map((subItem, subIndex) => (
                           <li key={subIndex}>
-                            <Link to={subItem.path}>{subItem.label}</Link>
+                            <Link to={item.path + subItem.path}>
+                              {subItem.label}
+                            </Link>
                           </li>
                         ))}
                       </ul>
