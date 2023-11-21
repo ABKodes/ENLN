@@ -1,14 +1,21 @@
-import background from '../assets/background.jpg';
+import background from "../assets/background.jpg";
+import { Link } from "react-router-dom";
 import { BiNews } from "react-icons/bi";
-import '../Fonts/fonts.css';
+import "../Fonts/fonts.css";
 import { TbTargetArrow } from "react-icons/tb";
 import book from "../assets/book.jpg";
-import Member from "../assets/port.jpg"
+import Member from "../assets/port.jpg";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { useState } from "react";
 const Hero = () => {
+  const [activeTab, setActiveTab] = useState("vision");
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
   return (
     <>
       {/* Hero section */}
@@ -34,9 +41,11 @@ const Hero = () => {
               Create Visionary Leaders for the Journey to End Malnutrition in
               Ethiopia.
             </p>
-            <button className="mx-auto my-6 w-[200px] rounded-md bg-primary py-3 font-sans font-medium text-white">
-              Join Us
-            </button>
+            <Link to="/membership">
+              <button className="mx-auto my-6 w-[200px] rounded-md bg-primary py-3 font-sans font-medium text-white">
+                Join Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -79,59 +88,223 @@ const Hero = () => {
           What we stand for
         </h1>
         <div className="flex justify-evenly">
-          <a>Vision</a>
-          <a>Mission</a>
-          <a>Value</a>
+          <a
+            onClick={() => handleTabClick("vision")}
+            className={`${
+              activeTab === "vision" ? "font-bold text-[#0EAC55] underline" : ""
+            } cursor-pointer font-serif font-bold`}
+          >
+            01 Vision
+          </a>
+          <a
+            onClick={() => handleTabClick("mission")}
+            className={`${
+              activeTab === "mission"
+                ? "font-bold text-[#0EAC55] underline"
+                : ""
+            } cursor-pointer font-serif font-bold`}
+          >
+            02 Mission
+          </a>
+          <a
+            onClick={() => handleTabClick("value")}
+            className={`${
+              activeTab === "value" ? "font-bold text-[#0EAC55] underline" : ""
+            } cursor-pointer font-serif font-bold`}
+          >
+            03 Value
+          </a>
         </div>
-        <div className="grid h-10 grid-cols-2">
-          <div className="flex items-center">
-            <p className="p-10 text-8xl font-bold text-[#54142C]">Our Vision</p>
+        {activeTab === "vision" && (
+          <div className="grid h-10 grid-cols-2">
+            <div className="flex items-center">
+              <p className="p-10 text-8xl font-bold text-[#54142C]">
+                Our Vision
+              </p>
+            </div>
+            <div className="flex justify-evenly p-5">
+              <ul className="list-inside columns-2">
+                <li className="mt-1 flex flex-shrink-0 text-justify">
+                  <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                  <p className=" ">
+                    Congratulations to the sales team for achieving
+                    record-breaking sales numbers last month. Keep up the
+                    excellent work!
+                  </p>
+                </li>
+                <li className="mt-1 flex flex-shrink-0 text-justify">
+                  <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                  <p className=" ">
+                    Congratulations to the sales team for achieving
+                    record-breaking sales numbers last month. Keep up the
+                    excellent work!
+                  </p>
+                </li>
+                <li className="mt-1 flex flex-shrink-0 text-justify">
+                  <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                  <p className=" ">
+                    Congratulations to the sales team for achieving
+                    record-breaking sales numbers last month. Keep up the
+                    excellent work!
+                  </p>
+                </li>
+                <li className="mt-1 flex flex-shrink-0 text-justify">
+                  <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                  <p className=" ">
+                    Congratulations to the sales team for achieving
+                    record-breaking sales numbers last month. Keep up the
+                    excellent work!
+                  </p>
+                </li>
+                <li className="mt-1 flex flex-shrink-0 text-justify">
+                  <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                  <p className=" ">
+                    Congratulations to the sales team for achieving
+                    record-breaking sales numbers last month. Keep up the
+                    excellent work!
+                  </p>
+                </li>
+                <li className="mt-1 flex flex-shrink-0 text-justify">
+                  <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                  <p className=" ">
+                    Congratulations to the sales team for achieving
+                    record-breaking sales numbers last month. Keep up the
+                    excellent work!
+                  </p>
+                </li>
+                {/* Add other vision items here */}
+              </ul>
+            </div>
           </div>
-          <div className="flex  items-center">
-            <ul className="list-inside columns-2">
-              <li className="mt-1 flex flex-shrink-0 text-justify">
-                <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
-                <p className=" ">
-                  Congratulations to the sales team for achieving
-                  record-breaking sales numbers last month. Keep up the
-                  excellent work!
+        )}
+        {activeTab === "mission" && (
+          <div>
+            <div className="grid h-10 grid-cols-2">
+              <div className="flex items-center">
+                <p className="p-10 text-8xl font-bold text-[#54142C]">
+                  Our Mission
                 </p>
-              </li>
-              <li className="mt-1 flex flex-shrink-0 text-justify">
-                <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
-                <p className=" ">
-                  Congratulations to the sales team for achieving
-                  record-breaking sales numbers last month. Keep up the
-                  excellent work!
-                </p>
-              </li>
-              <li className="mt-1 flex flex-shrink-0 text-justify">
-                <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
-                <p className=" ">
-                  Congratulations to the sales team for achieving
-                  record-breaking sales numbers last month. Keep up the
-                  excellent work!
-                </p>
-              </li>
-              <li className="mt-1 flex flex-shrink-0 text-justify">
-                <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
-                <p className=" ">
-                  Congratulations to the sales team for achieving
-                  record-breaking sales numbers last month. Keep up the
-                  excellent work!
-                </p>
-              </li>
-              <li className="mt-1 flex flex-shrink-0 text-justify">
-                <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
-                <p className=" ">
-                  Congratulations to the sales team for achieving
-                  record-breaking sales numbers last month. Keep up the
-                  excellent work!
-                </p>
-              </li>
-            </ul>
+              </div>
+              <div className="flex justify-evenly p-5">
+                <ul className="list-inside columns-2">
+                  <li className="mt-1 flex flex-shrink-0 text-justify">
+                    <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                    <p className=" ">
+                      Congratulations to the sales team for achieving
+                      record-breaking sales numbers last month. Keep up the
+                      excellent work!
+                    </p>
+                  </li>
+                  <li className="mt-1 flex flex-shrink-0 text-justify">
+                    <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                    <p className=" ">
+                      Congratulations to the sales team for achieving
+                      record-breaking sales numbers last month. Keep up the
+                      excellent work!
+                    </p>
+                  </li>
+                  <li className="mt-1 flex flex-shrink-0 text-justify">
+                    <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                    <p className=" ">
+                      Congratulations to the sales team for achieving
+                      record-breaking sales numbers last month. Keep up the
+                      excellent work!
+                    </p>
+                  </li>
+                  <li className="mt-1 flex flex-shrink-0 text-justify">
+                    <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                    <p className=" ">
+                      Congratulations to the sales team for achieving
+                      record-breaking sales numbers last month. Keep up the
+                      excellent work!
+                    </p>
+                  </li>
+                  <li className="mt-1 flex flex-shrink-0 text-justify">
+                    <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                    <p className=" ">
+                      Congratulations to the sales team for achieving
+                      record-breaking sales numbers last month. Keep up the
+                      excellent work!
+                    </p>
+                  </li>
+                  <li className="mt-1 flex flex-shrink-0 text-justify">
+                    <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                    <p className=" ">
+                      Congratulations to the sales team for achieving
+                      record-breaking sales numbers last month. Keep up the
+                      excellent work!
+                    </p>
+                  </li>
+                  {/* Add other vision items here */}
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
+        )}
+        {activeTab === "value" && (
+          <div>
+            <div className="grid h-10 grid-cols-2">
+              <div className="flex items-center">
+                <p className="p-10 text-8xl font-bold text-[#54142C]">
+                  Our Value
+                </p>
+              </div>
+              <div className="flex justify-evenly p-5">
+                <ul className="list-inside columns-2">
+                  <li className="mt-1 flex flex-shrink-0 text-justify">
+                    <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                    <p className=" ">
+                      Congratulations to the sales team for achieving
+                      record-breaking sales numbers last month. Keep up the
+                      excellent work!
+                    </p>
+                  </li>
+                  <li className="mt-1 flex flex-shrink-0 text-justify">
+                    <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                    <p className=" ">
+                      Congratulations to the sales team for achieving
+                      record-breaking sales numbers last month. Keep up the
+                      excellent work!
+                    </p>
+                  </li>
+                  <li className="mt-1 flex flex-shrink-0 text-justify">
+                    <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                    <p className=" ">
+                      Congratulations to the sales team for achieving
+                      record-breaking sales numbers last month. Keep up the
+                      excellent work!
+                    </p>
+                  </li>
+                  <li className="mt-1 flex flex-shrink-0 text-justify">
+                    <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                    <p className=" ">
+                      Congratulations to the sales team for achieving
+                      record-breaking sales numbers last month. Keep up the
+                      excellent work!
+                    </p>
+                  </li>
+                  <li className="mt-1 flex flex-shrink-0 text-justify">
+                    <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                    <p className=" ">
+                      Congratulations to the sales team for achieving
+                      record-breaking sales numbers last month. Keep up the
+                      excellent work!
+                    </p>
+                  </li>
+                  <li className="mt-1 flex flex-shrink-0 text-justify">
+                    <TbTargetArrow className="mr-2 space-x-2 text-justify text-5xl" />
+                    <p className=" ">
+                      Congratulations to the sales team for achieving
+                      record-breaking sales numbers last month. Keep up the
+                      excellent work!
+                    </p>
+                  </li>
+                  {/* Add other vision items here */}
+                </ul>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
       {/* What is new */}
       <div className="mx-auto w-10/12">
@@ -173,12 +346,14 @@ const Hero = () => {
           </div>
         </div>
         <div className="d-flex justify-content-end">
-          <button className="link-primary link ml-auto flex items-center space-x-1 text-justify">
-            <span>Learn More</span>
-            <span className="mt-1 flex-shrink-0 text-justify">
-              <BiNews />
-            </span>
-          </button>
+          <Link to="/news-and-events/news">
+            <button className="link-primary link ml-auto flex items-center space-x-1 text-justify">
+              <span>Learn More</span>
+              <span className="mt-1 flex-shrink-0 text-justify">
+                <BiNews />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
       {/* Use full resources */}
@@ -246,12 +421,14 @@ const Hero = () => {
           </div>
         </div>
         <div className="d-flex justify-content-end">
-          <button className="link-primary link ml-auto flex items-center space-x-1 text-justify">
-            <span>Learn More</span>
-            <span className="mt-1 flex-shrink-0 text-justify">
-              <BiNews />
-            </span>
-          </button>
+          <Link to="/resources">
+            <button className="link-primary link ml-auto flex items-center space-x-1 text-justify">
+              <span>Learn More</span>
+              <span className="mt-1 flex-shrink-0 text-justify">
+                <BiNews />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
 
