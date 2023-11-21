@@ -9,8 +9,8 @@ import AgeChart from "../components/AgeChart";
 function Membership() {
   return (
     <>
-      <div className="h-[110vh] w-full bg-secondary">
-        <div className="m-5 grid grid-cols-2">
+      <div className="h-[110vh] w-full bg-secondary p-5">
+        <div className=" grid grid-cols-2">
           <div className="items-center">
             <h1 className="p-6 text-5xl text-accent">Membership</h1>
             <p className="p-10 text-justify text-sm text-white">
@@ -48,9 +48,6 @@ function Membership() {
       </div>
       {/* How to become a member */}
       <div className="card z-10 mx-auto w-8/12 border border-black bg-base-100 p-5 font-sans shadow-xl lg:card-side">
-        <div className="max-w-[600px]">
-          <img src={background} className="mx-auto w-full" />
-        </div>
         <div className="card-body ">
           <h2 className="card-title">New album is released!</h2>
           <p>
@@ -65,6 +62,9 @@ function Membership() {
           <a className="link-hover link-primary link tracking-wider hover:underline">
             Become a member
           </a>
+        </div>
+        <div className="max-w-[600px]">
+          <img src={background} className="mx-auto w-full" />
         </div>
       </div>
       {/* Members Benefit */}
@@ -109,12 +109,17 @@ function Membership() {
           </div>
         </div>
       </div>
-      <div className="flex justify-evenly">
-      <GenderChart/>
-      <AgeChart/>
-      </div>
-      <div className="flex justify-center p-10 ">
-        <AgeChart/>
+      <div className="p-5">
+        <h1 className="p-5 font-serif text-3xl font-bold text-accent">
+          Demographic Insight
+        </h1>
+        <div className="flex justify-evenly">
+          <GenderChart />
+          <AgeChart />
+        </div>
+        <div className="flex justify-center p-10 ">
+          <AgeChart />
+        </div>
       </div>
     </>
   );
