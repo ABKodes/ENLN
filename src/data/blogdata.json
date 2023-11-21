@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "The Art of Web Development",
+    "image": "/mula.jpg",
+    "detail": "Explore the fascinating world of web development and discover the latest trends and technologies. From frontend to backend, dive into the art of creating stunning and responsive websites.",
+    "date": "November 15, 2023"
+  },
+  {
+    "id": 2,
+    "title": "Mastering React: A Comprehensive Guide",
+    "image": "/blogbg2.jpg",
+    "detail": "Unlock the full potential of React.js with our comprehensive guide. Learn advanced concepts, best practices, and tips for building scalable and efficient React applications.",
+    "date": "December 3, 2023"
+  },
+  {
+    "id": 3,
+    "title": "The Rise of Artificial Intelligence",
+    "image": "/sketch.jpg",
+    "detail": "Delve into the transformative world of Artificial Intelligence. Understand how AI is shaping industries, impacting our daily lives, and paving the way for the future.",
+    "date": "January 22, 2024"
+  },
+  {
+    "id": 4,
+    "title": "Exploring the Wonders of Space Travel",
+    "image": "/mula.jpg",
+    "detail": "Embark on a journey to the cosmos as we explore the wonders of space travel. From interplanetary missions to the search for extraterrestrial life, discover the latest advancements in space exploration.",
+    "date": "February 9, 2024"
+  },
+  {
+    "id": 5,
+    "title": "The Secrets of Successful Entrepreneurship",
+    "image": "/blogbg2.jpg",
+    "detail": "Learn the secrets of successful entrepreneurship from seasoned business leaders. Gain insights into building a startup, navigating challenges, and achieving sustainable growth.",
+    "date": "March 18, 2024"
+  },
+  {
+    "id": 6,
+    "title": "Healthy Living: Mind, Body, and Soul",
+    "image": "/sketch.jpg",
+    "detail": "Discover holistic approaches to healthy living. Explore tips for maintaining physical well-being, nurturing mental health, and finding balance for a fulfilling life.",
+    "date": "April 5, 2024"
+  }
+]
