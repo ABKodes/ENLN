@@ -24,7 +24,7 @@ function Membership() {
             </p>
             <div className="relative">
               <img src={Member} className="z-20 mx-auto" alt="Membership" />
-              <div className="absolute right-52 top-80 z-30 h-16 w-16 bg-red-500"></div>
+              <div className="absolute right-52 top-80 z-10 h-16 w-16 bg-red-500"></div>
             </div>
             <div className="flex items-center">
               <button className="btn btn-primary mx-auto my-12 flex items-center justify-center px-10">
