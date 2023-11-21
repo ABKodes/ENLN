@@ -1,21 +1,12 @@
-import { useNavigate } from "react-router-dom";
-import meeting2 from "../assets/meeting2.jpg";
 import logo from "../assets/logo.png";
 import { MdOutlineNavigateNext } from "react-icons/md";
-import mula from "../assets/mula.jpg";
-import sketch from "../assets/sketch.jpg";
-import banner2 from "../assets/banner2.jpg";
-import { AiOutlineSearch } from "react-icons/ai";
 import { TbPlayerTrackNext } from "react-icons/tb";
-import { LiaFastBackwardSolid } from "react-icons/lia";
 import blogbg2 from "../assets/blogbg2.jpg";
-import PlayfairDisplayRegular from "../fonts/PlayfairDisplay-Regular.ttf";
 import "../Fonts/fonts.css";
-import { GoSearch } from "react-icons/go";
 import blogData from "../data/blogData.json"
+import { Link } from "react-router-dom";
 
-function Blog({ posts }) {
-  const navigate = useNavigate();
+function Blog() {
   return (
     <div>
       <div
@@ -65,7 +56,6 @@ function Blog({ posts }) {
   <div
     key={blog.id}
     className="m-4 cursor-pointer rounded-lg bg-white shadow-sm p-5"
-    onClick={() => navigate(`blog-detail/${blog.id}`)}
   >
     <p className="mt-3">{blog.title}</p>
     <img
@@ -82,15 +72,15 @@ function Blog({ posts }) {
           <p className="text-[10px] text-gray-800">{blog.date}</p>
         </div>
       </div>
-      <a
+      <Link
         className="flex items-center text-justify text-sm no-underline hover:underline"
-        href=""
+        to="/blog-detail"
       >
         <span className="mr-2 font-semibold text-secondary">
           Read More
         </span>{" "}
         <MdOutlineNavigateNext />
-      </a>
+      </Link>
     </div>
   </div>
 ))}
