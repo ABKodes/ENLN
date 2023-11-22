@@ -4,12 +4,14 @@ import { GoInfinity } from "react-icons/go";
 import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 import { VscKey } from "react-icons/vsc";
 import { PiHandshake } from "react-icons/pi";
+import GenderChart from "../components/GenderChart"
+import AgeChart from "../components/AgeChart";
 function Membership() {
   return (
     <>
-      <div className="h-[110vh] w-full bg-secondary">
-        <div className="m-5 grid grid-cols-2">
-          <div className="">
+      <div className="h-[110vh] w-full bg-secondary p-5">
+        <div className=" grid grid-cols-2">
+          <div className="items-center">
             <h1 className="p-6 text-5xl text-accent">Membership</h1>
             <p className="p-10 text-justify text-sm text-white">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -22,7 +24,12 @@ function Membership() {
             </p>
             <div className="relative">
               <img src={Member} className="z-20 mx-auto" alt="Membership" />
-              <div className="absolute right-52 top-80 h-16 w-16 bg-red-500 z-30"></div>
+              <div className="absolute right-52 top-80 z-10 h-16 w-16 bg-red-500"></div>
+            </div>
+            <div className="flex items-center">
+              <button className="btn btn-primary mx-auto my-12 flex items-center justify-center px-10">
+                Become Member
+              </button>
             </div>
           </div>
           {/* second column */}
@@ -41,9 +48,6 @@ function Membership() {
       </div>
       {/* How to become a member */}
       <div className="card z-10 mx-auto w-8/12 border border-black bg-base-100 p-5 font-sans shadow-xl lg:card-side">
-        <div className="max-w-[600px]">
-          <img src={background} className="mx-auto w-full" />
-        </div>
         <div className="card-body ">
           <h2 className="card-title">New album is released!</h2>
           <p>
@@ -55,12 +59,20 @@ function Membership() {
             lectus quam id leo in vitae turpis. Nisi quis eleifend quam
             adipiscing vitae proin sagittis. Lacus vel facilisis volutpat est.
           </p>
+          <a className="link-hover link-primary link tracking-wider hover:underline">
+            Become a member
+          </a>
+        </div>
+        <div className="max-w-[600px]">
+          <img src={background} className="mx-auto w-full" />
         </div>
       </div>
       {/* Members Benefit */}
       <div className="p-5">
-        <h1>Members Benefit</h1>
-        <div className="flex items-center justify-evenly">
+        <h1 className="p-5 font-serif text-3xl font-bold text-accent">
+          Members Benefit
+        </h1>
+        <div className="flex items-center justify-evenly text-primary">
           <div className="flex flex-col items-center justify-center text-justify">
             <GoInfinity className="flex items-center justify-center  text-9xl" />
             <p className="ml-2">This and that</p>
@@ -78,7 +90,7 @@ function Membership() {
             <p className="ml-2">This and that</p>
           </div>
         </div>
-        <div className="flex items-center justify-evenly">
+        <div className="flex items-center justify-evenly text-primary">
           <div className="flex flex-col items-center justify-center text-justify">
             <GoInfinity className="flex items-center justify-center  text-9xl" />
             <p className="ml-2">This and that</p>
@@ -95,6 +107,18 @@ function Membership() {
             <PiHandshake className="flex items-center justify-center  text-9xl" />
             <p className="ml-2">This and that</p>
           </div>
+        </div>
+      </div>
+      <div className="p-5">
+        <h1 className="p-5 font-serif text-3xl font-bold text-accent">
+          Demographic Insight
+        </h1>
+        <div className="flex justify-evenly">
+          <GenderChart />
+          <AgeChart />
+        </div>
+        <div className="flex justify-center p-10 ">
+          <AgeChart />
         </div>
       </div>
     </>

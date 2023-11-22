@@ -1,7 +1,7 @@
 import {FaTelegram} from "react-icons/fa6"
 import {FaLinkedin} from "react-icons/fa"
 import {FaFacebook} from "react-icons/fa"
-import {FaTwitter} from "react-icons/fa"
+import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -55,7 +55,7 @@ function Footer() {
             <FaFacebook className="w-[24px] h-[24px]"/>
           </a>
           <a>
-            <FaTwitter className="w-[24px] h-[24px]"/>
+            <FaXTwitter className="w-[24px] h-[24px]"/>
           </a>
         </div>
       </nav>

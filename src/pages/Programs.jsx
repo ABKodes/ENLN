@@ -12,7 +12,7 @@ import {TbWorld} from "react-icons/tb"
 
 const Programs = () => {
   return (
-    <div className='w-full bg-gray-100 py-16'>
+    <div className='w-full bg-gray-100 pb-16'>
 
      <div style={{ backgroundImage: `url(${progbg})` }} className=' relative w-full bg-cover bg-center h-[45vh]'>
         <div  className='w-full h-full absolute bg-black/50'>
@@ -146,7 +146,7 @@ const Programs = () => {
   <div className='max-w-[1200px] relative  mx-auto grid md:grid-colds-2 border border-gray-300 shadow-lg border-t-2 mt-20 bg-white'>
 <div className='max-w-[1200px] grid md:grid-cols-2 border border-gray-300 shadow-lg'>
    
-    <div className='flex flex-col pt-12 w-[90%] mx-auto'>
+    <div className='flex flex-col pt-12 w-[90%] mx-auto '>
       <h1 style={{ fontFamily: "Playfair Display" }} className='md:text-3xl sm:text-2xl text-xl font-semibold text-accent px-12 pb-4'>Youth Leaders for Nutrition</h1>
       <p className='py-4 px-12'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum

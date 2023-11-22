@@ -5,11 +5,14 @@ import NewsData from "../data/news.json";
 import background from "../assets/meeting.jpg";
 import EventData from "../data/eventData.json";
 import {TbPlayerTrackNext} from 'react-icons/tb'
+import { Link } from "react-router-dom";
 function News() {
   return (
     <>
-      <h1 className="mx-5 text-3xl font-bold text-accent">News</h1>
-      <h1 className="mb-4 text-4xl font-bold">Featured News</h1>
+      <h1 className="p-5 text-left font-serif text-3xl font-bold text-accent">
+        News
+      </h1>
+      <h1 className="mb-4 text-xl pl-5 font-bold">Featured News</h1>
       <div className="mx-auto grid w-9/12 grid-cols-1 gap-4 md:grid-cols-2">
         {/* Background column */}
         <div
@@ -63,7 +66,7 @@ function News() {
       {/* Dividing Line */}
       {NewsData.map((newsItem) => (
         <div key={newsItem.id}>
-          <div className="mx-auto w-10/12 border-b-2 border-gray-500"></div>
+          <div className="mx-auto w-10/12 border-b-2 border-stone-200"></div>
           {/* Content */}
           <div className="card card-side mx-auto w-9/12 bg-base-100">
             <div className="flex h-[300px] w-[2000px] flex-col items-center justify-center">
@@ -77,15 +80,16 @@ function News() {
               <p className="text-horizontal text-justify font-light">
                 {newsItem.paragraph}
               </p>
-              <div className="mx-auto my-6 w-10/12 border-b-2 border-gray-500"></div>
+              <div className="mx-auto my-6 w-10/12 border-b-2 border-stone-200"></div>
               <div className="card-actions justify-between">
-                <button className="link-primary link flex items-center space-x-1 text-justify">
-                  <span>Read News</span>
-                  <span className="mt-1 flex-shrink-0 text-justify">
-                    <BiNews />
-                  </span>
-                </button>
-
+                <Link to="/news-detail">
+                  <button className="link-primary link flex items-center space-x-1 text-justify">
+                    <span>Read News</span>
+                    <span className="mt-1 flex-shrink-0 text-justify">
+                      <BiNews />
+                    </span>
+                  </button>
+                </Link>
                 <span className="flex items-center space-x-2 font-light">
                   <IoCalendarOutline />
                   <span>{newsItem.date}</span>
@@ -96,7 +100,7 @@ function News() {
         </div>
       ))}
 
-      <div className="flex justify-between bg-gray-100 px-36">
+      <div className="flex justify-between px-36">
         <div className="flex items-center">
           <TbPlayerTrackNext
             className="scale-x-[-1] text-primary"
