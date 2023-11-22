@@ -6,32 +6,28 @@ import AnnualForum1 from "../assets/AnnualForum1.jpg";
 import AnnualForum2 from "../assets/AnnualForum2.jpg";
 import { GoDot } from "react-icons/go";
 
+
   const AnnualForum = () => {
   const [activeItem, setActiveItem] = useState('item1');
-  // const [item1, setItem1]=useState(false);
-
-  // const handleItem1= ()=>{
-  //   setItem1(true);
-  // }
+ 
 
   const handleItemClick = (itemId) => {
     console.log("Item Clicked:", itemId);
     setActiveItem(itemId);
   };
     return (
-      <>
-        <div
-          className="m-8 h-3/5 w-full"
+      <div className="max-w-full ">
+         <div
+          className=" vh-screen w-full"
           style={{ fontFamily: "Playfair Display" }}
         >
           <h1 className="ml-20 font-serif text-3xl text-accent">
             ENLN Annual Forum
           </h1>
         </div>
-
-        <div className="carousel w-full">
-          <div id="item1" className="carousel-item relative w-full">
-            <img src={image1} className="w-full" />
+        <div className="carousel w-full ">
+          <div id="item1" className="carousel-item relative w-full ">
+            <img src={image1} className="w-full " />
             <div className="absolute bottom-10 right-40 flex transform justify-center gap-2 py-2">
               <a
                 href="#item1"
@@ -41,7 +37,7 @@ import { GoDot } from "react-icons/go";
                 onClick={() => handleItemClick("item1")}
               >
                 <GoDot />
-                {/* {item ? : null} */}
+              
               </a>
               <a
                 href="#item2"
@@ -64,7 +60,7 @@ import { GoDot } from "react-icons/go";
             </div>
           </div>
           <div id="item2" className="carousel-item relative w-full">
-            <img src={image2} className="w-full" />
+            <img src={image2} className="w-full h-auto" />
             <div className="absolute bottom-10 right-40 flex  transform justify-center gap-2 py-2">
               <a
                 href="#item1"
@@ -127,7 +123,8 @@ import { GoDot } from "react-icons/go";
               </a>
             </div>
           </div>
-        </div>
+        </div> 
+       
 
         <div className="border-black-100 h-20 w-full bg-secondary">
           <h2 className="m-auto pl-20 pt-8 font-sans text-xl text-white">
@@ -180,6 +177,7 @@ import { GoDot } from "react-icons/go";
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
+            {/* <Lottie animationData={Scroll} /> */}
           </div>
           <div
             className="w-1/3  flex-grow items-center justify-center  bg-cover bg-center bg-no-repeat"
@@ -207,17 +205,7 @@ import { GoDot } from "react-icons/go";
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            {/* <lottie-player
-              src="https://lottie.host/9b514b33-5bf0-425a-bbc6-05b607194ff1/Z0s2L6r6Pw.json"
-              background="#FFFFFF"
-              speed="1"
-              style="width: 300px; height: 300px"
-              loop
-              controls
-              autoplay
-              direction="1"
-              mode="normal"
-            ></lottie-player> */}
+            {/* <Lottie animationData ={scroll} /> */}
           </div>
           <div className="carousel carousel-vertical ">
             <div className="carousel-item relative h-full">
@@ -285,7 +273,7 @@ import { GoDot } from "react-icons/go";
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
 };
 export default AnnualForum;

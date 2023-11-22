@@ -1,21 +1,29 @@
-import background from '../assets/background.jpg';
+import React, {useState} from "react";
+import background from "../assets/background.jpg";
 import { BiNews } from "react-icons/bi";
-import '../Fonts/fonts.css';
+import "../Fonts/fonts.css";
 import { TbTargetArrow } from "react-icons/tb";
 import book from "../assets/book.jpg";
-import Member from "../assets/port.jpg"
+import Member from "../assets/port.jpg";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 const Hero = () => {
+  const [activeButton, setActiveButton] = useState('radio1');
+
+  const handleButtonClick = (buttonId) => {
+    setActiveButton(buttonId);
+  };
   return (
     <>
       {/* Hero section */}
-      <div
-        className="hero min-h-screen "
+       <div
+        className="hero  vh-screen"
         style={{
           backgroundImage: `url(${background})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         <div className="hero-overlay bg-opacity-40"></div>
@@ -23,7 +31,7 @@ const Hero = () => {
           className="hero-content text-center text-neutral-content"
           style={{ fontFamily: "Playfair Display" }}
         >
-          <div className="min-w-md">
+          <div className="min-w-md pt-32">
             <h1 className="p-2 text-9xl font-bold tracking-widest text-primary">
               ENLN
             </h1>
@@ -37,9 +45,17 @@ const Hero = () => {
             <button className="mx-auto my-6 w-[200px] rounded-md bg-primary py-3 font-sans font-medium text-white">
               Join Us
             </button>
+            <p className="mb-2 pt-32 space-x-40 text-3xl font-bold text-white">
+              <span> Government</span>
+              <span>Community</span>
+              <span>CSO Charity</span>
+              <span>Institution</span>
+            </p>
           </div>
         </div>
-      </div>
+      </div>  
+      
+
       {/* Coming Soon */}
       <div className="mb-5 h-screen w-full bg-[#efefef]">
         <div className=" h-3/12 mx-auto mt-5 w-6/12 bg-white p-8">
@@ -299,6 +315,256 @@ const Hero = () => {
       {/* Our Partners */}
       <div className="h-[50vh]">
         <h1>Our Partners</h1>
+        <div className="h-96 w-full">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27452.867073625097!2d38.7832139177516!3d8.890480607919972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a22c0ae779%3A0x681021ee0adfde87!2sKilinto%20Prison%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1700552241948!5m2!1sen!2set"
+            className="h-full w-full"
+            frameBorder="0"
+            style={{ border: "0" }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Google Map"
+          ></iframe>
+        </div>
+      </div>
+      <div className="flex-col-2 flex">
+        <div className="pl-60">
+          <p
+            style={{ fontFamily: "Playfair Display" }}
+            className="flex py-6 pt-40 text-center text-2xl font-bold text-accent"
+          >
+            {" "}
+            Let's Talk{" "}
+          </p>
+          <div className="flex w-[70%] justify-end pt-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum molestiae delectus culpa hic assumenda{" "}
+            </p>
+          </div>
+        </div>
+
+        <div
+          id="contact"
+          className="max-w[1040px] m-auto p-4 py-16 pr-60 md:pl-20"
+        >
+          <form action="" method="POST" encType="multipart/form-data">
+            <div className="grid w-full gap-4 py-2 md:grid-cols-2">
+              <div className="relative z-0">
+                <input
+                  type="text"
+                  id="Name"
+                  className="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-200 focus:border-gray-400 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-black dark:focus:border-gray-400"
+                  placeholder=" "
+                />
+                <label
+                  for="Name"
+                  className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-300 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-400 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-gray-400"
+                >
+                  Name
+                </label>
+              </div>
+              <div className="relative z-0">
+                <input
+                  type="text"
+                  id="Phone"
+                  className="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-0 py-2.5 text-sm text-gray-200 focus:border-gray-400 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-black dark:focus:border-gray-400"
+                  placeholder=" "
+                />
+                <label
+                  for="Phone"
+                  className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-300 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-400 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-gray-400"
+                >
+                  Phone
+                </label>
+              </div>
+              <div className="relative z-0">
+                <input
+                  type="text"
+                  id="Email"
+                  className="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent px-2 py-2.5 text-sm text-gray-200 focus:border-gray-400 focus:outline-none focus:ring-0 dark:border-gray-600 dark:text-black dark:focus:border-gray-400"
+                  placeholder=" "
+                />
+                <label
+                  for="Email"
+                  className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-300 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-gray-400 rtl:peer-focus:left-auto rtl:peer-focus:translate-x-1/4 dark:text-gray-400 peer-focus:dark:text-gray-400"
+                >
+                  Email
+                </label>
+              </div>
+            </div>
+            <div className="flex flex-col py-2">
+              <label className="py-2 text-sm uppercase"> Message</label>
+              <textarea
+                className="flex rounded-lg border-2 border-secondary p-3 focus:text-gray-400 "
+                rows={10}
+                type="text"
+                name="Subject"
+              ></textarea>
+            </div>
+            <button className="hover:bg-green mt-4 w-full rounded-lg bg-primary p-4 text-white hover:font-semibold hover:text-white">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div className="relative mx-auto  flex w-10/12 border">
+        <div className="relative flex-1 bg-white">
+          <p className=" absolute left-20 top-32 -rotate-45 text-9xl font-bold tracking-wider text-[#dfc4c4]">
+            ??
+          </p>
+          <h1 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform pl-48 text-center font-serif text-8xl text-accent ">
+            FAQ
+          </h1>
+        </div>
+
+        <div className="bg-white-500 flex-1 pt-14 text-justify text-xl">
+          <div className="collapse rounded-none bg-transparent ">
+            <input
+              type="radio"
+              name="my-accordion-3"
+              id="radio1"
+              checked={activeButton === "radio1"}
+              onChange={() => handleButtonClick("radio1")}
+              className="hidden"
+            />
+            <label
+              htmlFor="radio1"
+              className={`collapse-title relative cursor-pointer text-xl font-medium`}
+            >
+              <div
+                className={`flex items-center ${
+                  activeButton === "radio1" ? "text-black" : ""
+                }`}
+              >
+                <input
+                  type="radio"
+                  name="radio-1"
+                  className={`radio-primary radio h-6 w-6 rounded-full border-2  ${
+                    activeButton === "radio1"
+                      ? "rounded-full border-primary bg-primary"
+                      : ""
+                  }`}
+                  checked={activeButton === "radio1"}
+                  onChange={() => handleButtonClick("radio1")}
+                />
+                <span className="ml-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                </span>
+              </div>
+            </label>
+            <div className="collapse-content">
+              <p className="m-3 border-l-2 border-primary  px-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                aliquam, urna ut ullamcorper tristique, sapien velit convallis
+                tellus, ut tempor tortor felis in turpis. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Sed aliquam, urna ut
+                ullamcorper tristique, sapien velit convallis tellus, ut tempor
+                tortor felis in turpis. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed aliquam, urna ut ullamcorper tristique,
+                sapien velit convallis tellus, ut tempor tortor felis in turpis.
+              </p>
+            </div>
+          </div>
+
+          {/* Repeat similar structure for other radio buttons */}
+
+          <div className="collapse rounded-none bg-transparent ">
+            <input
+              type="radio"
+              name="my-accordion-3"
+              id="radio2"
+              checked={activeButton === "radio2"}
+              onChange={() => handleButtonClick("radio2")}
+              className="sr-only"
+            />
+            <label
+              htmlFor="radio2"
+              className={`collapse-title relative cursor-pointer text-xl font-medium`}
+            >
+              <div
+                className={`flex items-center ${
+                  activeButton === "radio2" ? "text-black" : ""
+                }`}
+              >
+                {/* Replace the custom-styled radio button with daisyUI radio button */}
+                <input
+                  type="radio"
+                  name="radio-2"
+                  className={`radio-primary radio h-6 w-6 rounded-full border-2 pr-5 ${
+                    activeButton === "radio2" ? "border-primary bg-primary" : ""
+                  }`}
+                  checked={activeButton === "radio2"}
+                  onChange={() => handleButtonClick("radio2")}
+                />
+                <span className="ml-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                </span>
+              </div>
+            </label>
+            <div className="collapse-content">
+              <p className="m-3 border-l-2 border-primary  px-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                aliquam, urna ut ullamcorper tristique, sapien velit convallis
+                tellus, ut tempor tortor felis in turpis. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Sed aliquam, urna ut
+                ullamcorper tristique, sapien velit convallis tellus, ut tempor
+                tortor felis in turpis. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed aliquam, urna ut ullamcorper tristique,
+                sapien velit convallis tellus, ut tempor tortor felis in turpis.
+              </p>
+            </div>
+          </div>
+
+          <div className="collapse rounded-none bg-transparent ">
+            <input
+              type="radio"
+              name="my-accordion-3"
+              id="radio3"
+              checked={activeButton === "radio3"}
+              onChange={() => handleButtonClick("radio3")}
+              className="sr-only"
+            />
+            <label
+              htmlFor="radio3"
+              className={`collapse-title relative cursor-pointer text-xl font-medium`}
+            >
+              <div
+                className={`flex items-center ${
+                  activeButton === "radio3" ? "text-black" : ""
+                }`}
+              >
+                {/* Replace the custom-styled radio button with daisyUI radio button */}
+                <input
+                  type="radio"
+                  name="radio-3"
+                  className={`radio-primary radio h-6 w-6 rounded-full border-2 pr-5 ${
+                    activeButton === "radio3" ? "border-primary bg-primary" : ""
+                  }`}
+                  checked={activeButton === "radio3"}
+                  onChange={() => handleButtonClick("radio3")}
+                />
+                <span className="ml-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                </span>
+              </div>
+            </label>
+            <div className="collapse-content">
+              <p className="m-3 border-l-2 border-primary  px-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                aliquam, urna ut ullamcorper tristique, sapien velit convallis
+                tellus, ut tempor tortor felis in turpis. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit. Sed aliquam, urna ut
+                ullamcorper tristique, sapien velit convallis tellus, ut tempor
+                tortor felis in turpis. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed aliquam, urna ut ullamcorper tristique,
+                sapien velit convallis tellus, ut tempor tortor felis in turpis.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
